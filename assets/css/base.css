@@ -1,0 +1,232 @@
+:root{
+    /* --ITZone-color: #0266a4;
+    --ITZone-rgba: rgba(0, 87, 141, 0.7);
+    --ITZone-dark: #0272b7; */
+
+    /* #00ca94 */
+    /* #1c5341 */
+    /* #007d5c */
+    --ITZone-color: #007d5c;
+    --ITZone-rgba: rgb(0, 187, 141, 0.80);
+    /* --ITZone-dark: #0272b7; */
+}
+
+*{
+    box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.d-none{
+    display: none;
+}
+
+
+html{
+    font-size: 62.5%;
+    /* => 1rem = 10px */
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    /* overflow-x: auto; */
+}
+
+body{
+    margin: 0;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+option{
+    text-align: center;
+}
+
+select{
+    background-color: var(--ITZone-rgba);
+    border: 1px solid #fff;
+    color: #fff;
+    outline: none;
+    border-radius: 10px;
+}
+
+.bg-outside{
+    background: url('../img/schedule-fo4-2023.jpg') no-repeat;
+}
+
+/* =============<<Manager>>================ */
+.Lock{
+    background-color: var(--booked-seat);
+}
+
+.translate-down{
+    animation: slideDown linear 0.3s;
+}
+
+/* ======================================== */
+
+.cluster-click{
+    color: var(--booked-seat)!important;
+}
+
+
+.isClick{
+    background-color: #ccc;
+    color: #000;
+}
+
+.choosing-seat{
+    background-color: var(--choosing-seat);
+}
+
+.booked-seat{
+    background-color: var(--booked-seat);
+}
+
+.Book{
+    background-color: var(--booked-seat);
+    pointer-events: none;
+}
+
+.disabled-tag{
+    pointer-events: none;
+}
+
+.moveLinearClass{
+    animation: moveLinearLeft linear 1s;
+}
+
+.hidden {
+    display: none;
+}
+
+#toast {
+    position: fixed;
+    top: 80px;
+    right: 10px;
+    /* transform: translateX(-50%); */
+    background-color: var(--ITZone-rgba);
+    color: white;
+    padding: 15px;
+    font-size: 1.5rem;
+    /* width: 0%; */
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+
+@keyframes slideDown {
+    from{
+        transform: translateX(100%) translateY(0%);
+    }
+    to{
+        transform: translateX(100%) translateY(200%);
+    }
+}
+
+@keyframes moveLinearLeft {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveLinearRight {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    from{
+        opacity: 1;
+        display: block;
+    }
+    to{
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        display: none;
+    }
+    to{
+        opacity: 1;
+        display: block;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes slideInNavbar {
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInAbout {
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes sliderOut {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes rotateDown {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes rotateUp {
+    from{
+        transform: rotate(90deg);
+    }
+    to{
+        transform: rotate(0);
+    }
+}
+
+/* ============================= Tâm ============================= */
